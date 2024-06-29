@@ -1,0 +1,18 @@
+#Develop a simple aptcha genrator.
+
+#importing random module
+import random
+
+# Define characters to be used in CAPTCHA
+characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+
+#initialising the captcha
+captcha = ""
+
+
+# Generate CAPTCHA using for loop
+for _ in range(5):
+    captcha += random.choice(characters)
+
+# Print CAPTCHA
+print("Generated CAPTCHA:", captcha)
