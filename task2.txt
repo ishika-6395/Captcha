@@ -1,0 +1,20 @@
+#importing random module
+import random
+
+#taking user's choice as input from rock,scissor,paper
+u=input("Enter your user's choice from rock,paper,scissor:").lower()
+
+#get computer's choice using choice function
+c=random.choice(["rock","paper","scissor"])
+
+#printing user's and computer's choice
+print("User's choice is:",u)
+print("Computer's choice is:",c)
+
+#Determine winner
+if(u==c):
+    print("Ohh it's a tie")
+elif((u=="rock" and c=="scissor")or(u=="scissor" and c=="paper") or (u=="paper" and c=="rock")):
+    print("Congragulation!! You win")
+else:
+    print("You lost")
